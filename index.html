@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🌍 Country Explorer</h1>
+    <div class="search-filter">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="국가 이름을 입력하세요"
+      />
+      <select id="regionFilter">
+        <option value="">전체 대륙</option>
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Americas">Americas</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section id="countryList" class="country-list">
+      <!-- 나라 카드가 여기에 표시됩니다 -->
+    </section>
+
+    <aside id="countryDetail" class="country-detail hidden">
+      <!-- 클릭한 국가의 상세 정보 표시 -->
+      <button id="closeDetail">닫기</button>
+      <div class="flag-container">
+        <img id="detailFlag" src="" alt="국기" />
+      </div>
+      <h2 id="detailName"></h2>
+      <ul id="detailInfo">
+        <!-- 상세 정보 항목 -->
+      </ul>
+      <div id="borderCountries">
+        <!-- 국경 국가 버튼들 -->
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
